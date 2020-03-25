@@ -1,0 +1,18 @@
+{
+    "id": 1008,
+    "model": "a7000",
+	"make":"Lenovo",
+    "network": "4G",
+    "dualsim": "Yes",
+    "display": "5 inch",
+	"ram":"1.5gb",
+	"rom":"8gb",
+	"externalslot":"Yes",
+	"Review":{
+			"A":"Bad Phone",
+			"B":"Good Phone"
+	},
+	"image1":"http://10.5.50.199:8080/html/images/phone/1001/1.jpg",
+	"image2":"http://10.5.50.199:8080/html/images/phone/1001/2.jpg",
+	"image3":"http://10.5.50.199:8080/html/images/phone/1001/3.jpg"
+}

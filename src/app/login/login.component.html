@@ -1,0 +1,17 @@
+
+<div>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <label for="userName">User Name:</label>
+    <input type="text" formControlName="userName" id="fname" name="userName" placeholder="User Name" /><br><br>
+    <div *ngIf="submitted && f.userName.errors" >
+      <div *ngIf="f.userName.errors.required">User Name is required</div>
+    </div>
+    <label for="password">Password:</label>
+    <input type="text" formControlName="password" id="lname" name="password" placeholder="Password"  /><br><br>
+    <div *ngIf="submitted && f.password.errors" >
+      <div *ngIf="f.password.errors.required">password is required</div>
+    </div>
+    <button class="btn btn-primary mr-1">Login</button>
+  </form>
+</div>
+{{loginForm.value | json}}

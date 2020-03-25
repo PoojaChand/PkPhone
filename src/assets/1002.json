@@ -1,0 +1,18 @@
+{
+    "id": 1002,
+    "model": "J7",
+	"make":"Samsung",
+    "network": "3G",
+    "dualsim": "No",
+    "display": "5.5 inch",
+	"ram":"1gb",
+	"rom":"8gb",
+	"externalslot":"No",
+	"Review":{
+			"A":"Worst Phone",
+			"B":"Good Phone"
+	},
+	"image1":"http://10.5.50.199:8080/html/images/phone/1002/1.jpg",
+	"image2":"http://10.5.50.199:8080/html/images/phone/1002/2.jpg",
+	"image3":"http://10.5.50.199:8080/html/images/phone/1002/3.jpg"
+}

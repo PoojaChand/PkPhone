@@ -1,0 +1,43 @@
+	{
+    "phonedetails": [
+        {
+            "id": 1001,
+            "name": "Samsung On7"
+		},{
+			"id": 1002,
+            "name": "Samsung J7"
+        },
+		{
+			"id": 1003,
+            "name": "Redmi Note3"
+        },
+		{
+            "id": 1004,
+            "name": "Lenovo K3 Note"
+        },
+		{
+			"id": 1005,
+            "name": "Iphone 6S"
+        },
+		{
+			"id": 1006,
+            "name": "Nokia Lumia 535"
+		},
+		{
+			"id": 1007,
+            "name": "Nokia 1100"
+        },
+		{
+			"id": 1008,
+            "name": "Lenovo a7000"
+        },
+		{
+			"id": 1009,
+            "name": "Gionee M5"
+        },
+		{
+			"id": 1010,
+            "name": "Oneplus One"
+        }
+    ]
+}
