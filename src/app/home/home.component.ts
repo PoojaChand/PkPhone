@@ -26,9 +26,7 @@ export class HomeComponent implements OnInit {
       );
   }
 
-  sd(item) {
-    console.log(item);
-    this.route.navigateByUrl("detail", { state});
+  getItem(item) {
+    this.route.navigateByUrl("detail", { state: {details: item}});
   }
-
 }

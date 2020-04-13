@@ -8,11 +8,13 @@
 	"ram":"-",
 	"rom":"-",
 	"externalslot":"-",
+	"weight": "148gms",
+	"battery":"2480mAh",
 	"Review":{
 			"A":"Bad Phone",
 			"B":"Good Phone"
 	},
-	"image1":"http://10.5.50.199:8080/html/images/phone/1001/1.jpg",
-	"image2":"http://10.5.50.199:8080/html/images/phone/1001/2.jpg",
-	"image3":"http://10.5.50.199:8080/html/images/phone/1001/3.jpg"
+	"image1":"assets/1001/1.jpg",
+	"image2":"assets/1001/2.jpg",
+	"image3":"assets/1001/3.jpg"
 }

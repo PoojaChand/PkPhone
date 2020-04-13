@@ -29,11 +29,11 @@
     font-size: 20px;
     margin-left:0px;
     padding:0px;
-    height:140px;
+    height:120px;
     overflow: hidden;
     background-color:white;
+    margin-bottom: 0px;
   }
-  
   li {
     float: left;
   }
@@ -42,11 +42,57 @@
     color:black;
     text-align: center;
     padding: 50px;
-  }   
-  .lenovo{
+  }  
+  .arrow {
+    float: right;
+    padding: 46px 80px;
+  }
+  .back {
+    background-color: #bebaba ;
+  } 
+  .lenovo {
     font-family: sans-serif,monospace;
     font-size: 20px;
     color:#FFF;
-
+    padding : 20px;
+    text-align : center;
   }
-  
+  .image {
+    padding-left: 80px;
+  }
+  .image1 {
+    padding-left: 20px;
+  }
+  .Review {
+    font-family: sans-serif,monospace;
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 14px;
+    color:black;
+    margin : 20px 80px;
+  }
+  .mr {
+    font-family: sans-serif,monospace;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 14px;
+    color:black;
+    margin : 20px 80px;
+  }
+  .quality {
+    font-family: sans-serif,monospace;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 14px;
+    color:black;
+    margin : 20px 80px;
+  }
+  footer {
+    font-family: sans-serif,monospace;
+    font-size: 15px;
+    color: #fff;
+    background-color: #333333;
+    text-align: center;
+    height: 60px;
+    padding: 20px 0px;
+  }  

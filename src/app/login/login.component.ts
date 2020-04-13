@@ -11,7 +11,6 @@ export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   submitted: boolean;
 
-
   constructor(private route: Router, private fb: FormBuilder) { }
 
   ngOnInit(): void {
@@ -24,10 +23,8 @@ export class LoginComponent implements OnInit {
    // convenience getter for easy access to form fields
    get f() { return this.loginForm.controls; }
 
-  onSubmit() {
-     
+  onSubmit() {     
     this.submitted = true;
     this.route.navigateByUrl("home");
   }
-
 }

@@ -8,12 +8,14 @@
 	"ram":"1.5gb",
 	"rom":"8gb",
 	"externalslot":"Yes",
+	"weight": "160gms",
+	"battery":"2500mAh",
 	"Review":{
 			"A":"Bad Phone",
 			"B":"Good Phone"
 	},
 	
-	"image1":"http://10.5.50.199:8080/html/images/phone/1003/1.jpg",
-	"image2":"http://10.5.50.199:8080/html/images/phone/1003/2.jpg",
-	"image3":"http://10.5.50.199:8080/html/images/phone/1003/3.jpg"
+	"image1":"assets/1003/1.jpg",
+	"image2":"assets/1003/2.jpg",
+	"image3":"assets/1003/3.jpg"
 }
