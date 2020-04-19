@@ -24,10 +24,18 @@
   <div class="title">TOP 10 Andriods</div>
   <table class="details">
     <tr>
-      <th>id</th>
-      <th>name</th>
+      <th colspan="2">
+        <div class="text-right">
+          <label>Search: </label> &nbsp;
+          <input type="text" [(ngModel)]="searchText" placeholder="Search" />
+        </div>
+      </th>
     </tr>
-    <tr *ngFor="let phone of mobile" (click)="getItem(phone)">
+    <tr>
+      <th>Mobile ID</th>
+      <th>Mobile Name</th>
+    </tr>
+    <tr *ngFor="let phone of mobile | filter:searchText" (click)="getItem(phone)">
       <td>{{phone.id}}</td>
       <td>{{phone.name}}</td>
     </tr>

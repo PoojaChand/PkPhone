@@ -10,7 +10,8 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
   mobile: any;
   phoneService: any;
-
+  searchText: string;
+  
   constructor(private route: Router, private service: PhoneService) { }
 
   ngOnInit(): void {

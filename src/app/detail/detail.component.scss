@@ -29,7 +29,7 @@
     font-size: 20px;
     margin-left:0px;
     padding:0px;
-    height:120px;
+    height:65px;
     overflow: hidden;
     background-color:white;
     margin-bottom: 0px;
@@ -37,15 +37,22 @@
   li {
     float: left;
   }
-  li a {
-    display: block;
-    color:black;
-    text-align: center;
-    padding: 50px;
-  }  
+  li {
+    a {
+      display: block;
+      color:black;
+      text-align: center;
+      padding: 19px;
+      &:hover {      
+        text-decoration: none;
+        background: #7a7a7a;
+        color: #FFFFFF;
+      }
+    }
+  }
   .arrow {
     float: right;
-    padding: 46px 80px;
+    padding: 18px 80px;
   }
   .back {
     background-color: #bebaba ;
@@ -58,7 +65,7 @@
     text-align : center;
   }
   .image {
-    padding-left: 80px;
+    padding: 0 80px;
   }
   .image1 {
     padding-left: 20px;
