@@ -9,3 +9,55 @@ body {
 .pointer {
     cursor: pointer;
 }
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 450px;
+    margin-left:80px;
+    height:140px;
+    color:white;
+    font-size:60px;
+  }
+.search {
+    position: absolute;
+    top: 55px;
+    width: 240px;
+    height:30px;
+    text-align:left;
+    margin-right: 27%;
+    padding: 15px;
+    right: 0px;
+    font-family: sans-serif,monospace;
+    font-size: 14px;
+    color: #000;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 20px;
+  }
+  ul {
+    list-style-type: none;
+    font-family: sans-serif,monospace;
+    font-size: 20px;
+    margin-left:0px;
+    padding:0px;
+    height:65px;
+    overflow: hidden;
+    background-color:white;
+    margin-bottom: 0px;
+  }
+  li {
+    float: left;
+  }
+  li {
+    a {
+      display: block;
+      color:black;
+      text-align: center;
+      padding: 19px;
+      &:hover {      
+        text-decoration: none;
+        background: #7a7a7a;
+        color: #FFFFFF;
+      }
+    }
+  }

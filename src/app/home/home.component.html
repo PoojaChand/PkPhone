@@ -3,12 +3,17 @@
     <img src="assets/Untitled-4.jpg" alt="PK /">
     <div class="top-left">PK CELL Phones</div>
     <div>
-      <input type="text" placeholder="Search" class="search">    
+      <!--<input type="text" placeholder="Search" class="search">-->
+      <input type="text" [(ngModel)]="srchText" placeholder="Search by Name" class="search">
+      <div *ngIf="srchText.length > 0">
+        <div *ngFor="let phone of mobile | abcd:srchText" (click)="getItem(phone)">
+          {{phone.name}}
+       </div>  
     </div>
   </div>
   <ul>
     <li><a href="#home">Home</a></li>
-    <li><a href="#google">google</a></li>
+    <li><a href="#google">Google</a></li>
   </ul>
   <div class="background">
     <div class="block">
@@ -25,7 +30,7 @@
   <table class="details">
     <tr>
       <th colspan="2">
-        <div class="text-right">
+       <div class="text-right">
           <label>Search: </label> &nbsp;
           <input type="text" [(ngModel)]="searchText" placeholder="Search" />
         </div>

@@ -1,18 +1,19 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'filter'
+  name: 'abcd'
 })
 export class FilterPipe implements PipeTransform {
 
  /* transform(value: unknown, ...args: unknown[]): unknown {
     return null; */
-    transform(items: any[], searchText: string): any[] {
+    transform(items: any[], srchText: string): any[] {
       if(!items) return [];
-      if(!searchText) return items;
-  searchText = searchText.toLowerCase();
+      if(!srchText) return items;
+      srchText = srchText.toLowerCase();
   return items.filter( it => {
-        return it.toLowerCase().includes(searchText);
+    console.log(it);
+        return it.name.toLowerCase().includes(srchText);
       });
      }
   }

@@ -10,6 +10,8 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
   mobile: any;
   phoneService: any;
+  srchText: string;
+  phonelist: any;
   searchText: string;
   
   constructor(private route: Router, private service: PhoneService) { }
@@ -26,8 +28,8 @@ export class HomeComponent implements OnInit {
       }
       );
   }
-
-  getItem(item) {
-    this.route.navigateByUrl("detail", { state: {details: item}});
+  getItem(item) {    
+    this.route.navigateByUrl("detail", { state: {details: item, phonedetails: this.mobile}});  
   }
+  
 }

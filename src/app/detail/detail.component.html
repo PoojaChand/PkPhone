@@ -3,14 +3,20 @@
       <img src="assets/Untitled-4.jpg" alt="PK /">
       <div class="top-left">PK CELL Phones</div>
     <div>
-      <input type="text" placeholder="Search" class="search">    
+      <input type="text" [(ngModel)]="srchText" placeholder="Search by Name" class="search">
+      <div *ngIf="srchText.length > 0">
+        <div *ngFor="let phone of phonelist | abcd:srchText" (click)="getItem(phone.id)">
+          {{phone.name}}
+       </div> 
+      </div> 
     </div>
     </div>
   <div>
   <ul>
     <li><a href="#home">Home</a></li>
     <li><a href="#google">Google</a></li>
-    <li class="arrow"><img class="pointer" src="assets/Arrow.png" alt="image"></li>
+    <li class="arrow"><img class="pointer" src="assets/Arrow.png" alt="image" (click)="getHome()">
+    </li>
   </ul>
   </div>
   <div class="back">

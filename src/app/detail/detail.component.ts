@@ -9,13 +9,18 @@ import { Router } from '@angular/router';
 })
 export class DetailComponent implements OnInit {
   mobile: any;
-  
+  srchText: string='';
+  phonelist: any;  
 
   constructor(private service: PhoneService,private route: Router) { }
 
   ngOnInit(): void {
+    window.scroll({ 
+      top: 0
+    })
     console.log(window.history.state);
     let dlt=window.history.state.details;
+    this.phonelist=window.history.state.phonedetails;
     if(dlt && dlt.id) { 
       this.getPhone(dlt.id);
     } else {
@@ -32,5 +37,12 @@ export class DetailComponent implements OnInit {
       }
       );
   }
+  getItem(item) {
+  //  this.route.navigateByUrl("detail", { state: {details: item, phonedetails: this.mobile}});
+  this.getPhone(item);
+  }
+  getHome() {
+    this.route.navigateByUrl("home");
+  }
+  }
 
-}
