@@ -1,13 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
-body {
+.body {
     width: 1024px;
     margin: 0 auto;
+}
+.vh {
+  height: 100vh;
 }
 .float-right {
     float: right;
 }
 .pointer {
     cursor: pointer;
+}
+input {
+  padding-left: 2px;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #c70000;
+  border-color: #c70000;
+  &:hover, &:active, &:focus { 
+    background-color: #ea2b2b !important;
+    border-color: #ea2b2b !important;
+    --button-color: #ea2b2b !important;
+  }
 }
 .top-left {
     position: absolute;

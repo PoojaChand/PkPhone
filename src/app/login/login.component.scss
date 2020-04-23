@@ -1,8 +1,27 @@
-
-  .img {
-    margin-left: 0px;
-    margin-right: 0px;
-    height: 500px;
-    width: 500px;
+.login-logo {
+  max-height: 500px;
+  max-width: 500px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
-  
+.form-layout {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto 0;
+}
+.txt-input {  
+  width: 99%;
+  height: 45px;
+}
+.border {
+  box-shadow: -9px 0px 15px 20px #908e8f;
+}
+.btn-login {
+  width: 50%;
+}

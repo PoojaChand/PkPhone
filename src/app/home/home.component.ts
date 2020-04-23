@@ -11,7 +11,7 @@ export class HomeComponent implements OnInit {
   mobile: any;
   phoneService: any;
   srchText: string;
-  phonelist: any;
+  phoneList: any;
   searchText: string;
   
   constructor(private route: Router, private service: PhoneService) { }
@@ -21,15 +21,14 @@ export class HomeComponent implements OnInit {
   }
   
   getPhone() {
-    this.service.getPhonelist("assets/phonelist.json").subscribe(data=>
-      {
-        console.log(data);
-        this.mobile=data.phonedetails;
-      }
-      );
-  }
-  getItem(item) {    
-    this.route.navigateByUrl("detail", { state: {details: item, phonedetails: this.mobile}});  
+    this.service.getPhonelist("assets/phonelist.json").subscribe(data => {
+      console.log(data);
+      this.mobile = data.phonedetails;
+      this.phoneList = data.phonedetails;
+    });
   }
   
+  getItem(item) {    
+    this.route.navigateByUrl("detail", { state: { details: item, phonedetails: this.mobile }});  
+  }  
 }

@@ -17,10 +17,10 @@ export class DetailComponent implements OnInit {
   ngOnInit(): void {
     window.scroll({ 
       top: 0
-    })
+    });
     console.log(window.history.state);
-    let dlt=window.history.state.details;
-    this.phonelist=window.history.state.phonedetails;
+    let dlt = window.history.state.details;
+    this.phonelist = window.history.state.phonedetails;
     if(dlt && dlt.id) { 
       this.getPhone(dlt.id);
     } else {
