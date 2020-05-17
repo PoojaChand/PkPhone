@@ -1,16 +1,15 @@
-<div class="body">
+<div class="body image">
   <div>  
     <img src="assets/Untitled-4.jpg" alt="PK /">
-    <div class="top-left">PK CELL Phones</div>
-    <div>
-      <!--<input type="text" placeholder="Search" class="search">-->
+      <div class="top-left">PK CELL Phones</div>
+    <div class="top-right">
       <input type="text" [(ngModel)]="srchText" placeholder="Search by Name" class="search">
       <div *ngIf="srchText?.length > 0">
-        <div *ngFor="let phone of phoneList | abcd:srchText" (click)="getItem(phone)">
-          {{phone.name}}
-       </div>  
+      <div *ngFor="let phone of phoneList | abcd:srchText" (click)="getItem(phone)">
+        {{phone.name}}
+      </div>  
+      </div>
     </div>
-  </div>
   <ul>
     <li><a href="#home">Home</a></li>
     <li><a href="#google">Google</a></li>

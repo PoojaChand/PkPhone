@@ -25,6 +25,9 @@ export class LoginComponent implements OnInit {
 
   onSubmit() {     
     this.submitted = true;
+    if(this.loginForm.invalid){
+      return;
+    }
     this.route.navigateByUrl("home");
   }
 }

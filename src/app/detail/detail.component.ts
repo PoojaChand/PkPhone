@@ -30,12 +30,10 @@ export class DetailComponent implements OnInit {
     
   getPhone(id) {
      // this.service.getPhonelist("assets/"+url+".id").subscribe(data=>
-    this.service.getPhonelist("assets/"+id+".json").subscribe(data=>
-      {
+    this.service.getPhonelist("assets/"+id+".json").subscribe(data => {
         console.log(data);
         this.mobile=data;
-      }
-      );
+      });
   }
   getItem(item) {
   //  this.route.navigateByUrl("detail", { state: {details: item, phonedetails: this.mobile}});
